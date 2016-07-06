@@ -3,6 +3,7 @@
 FROM rails:4.2
 RUN apt-get update && \
 	apt-get install -y less && \
+	apt-get install -y vim && \
 	apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
